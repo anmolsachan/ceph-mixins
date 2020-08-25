@@ -2,6 +2,7 @@
   _config+:: {
     // Selectors are inserted between {} in Prometheus queries.
     cephExporterSelector: 'job="rook-ceph-mgr"',
+    ocsExporterSelector: 'job="ocs-metrics-exporter"',
 
     // Expected number of Ceph Managers which are reporting metrics
     cephMgrCount: 1,
@@ -14,6 +15,7 @@
     clusterVersionAlertTime: '10m',
     clusterUtilizationAlertTime: '5s',
     clusterReadOnlyAlertTime: '0s',
+    clusterObjectStoreStateAlertTime: '15s',
     monQuorumAlertTime: '15m',
     monQuorumLeaderChangesAlertTime: '5m',
     osdDataRebalanceAlertTime: '15s',
@@ -30,6 +32,7 @@
 
     // Constants
     storageType: 'ceph',
+    objectStorageType: 'RGW',
 
     // For links between grafana dashboards, you need to tell us if your grafana
     // servers under some non-root path.
