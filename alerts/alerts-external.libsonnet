@@ -1,2 +1,1 @@
-(import 'pvc.libsonnet') +
-(import 'services.libsonnet')
+(import 'services-external.libsonnet')

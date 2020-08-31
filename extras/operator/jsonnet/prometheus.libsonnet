@@ -21,7 +21,7 @@ local k = import 'ksonnet/ksonnet.beta.3/k.libsonnet';
             prometheus: $._config.prometheus.name,
             role: 'alert-rules',
           },
-          name: 'prometheus-ceph-rules',
+          name: 'prometheus-ocs-rules',
           namespace: $._config.namespace,
         },
         spec: {

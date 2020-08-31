@@ -15,6 +15,6 @@ mkdir manifests
 jsonnet -J vendor -m manifests "example.jsonnet" | xargs -I{} sh -c 'cat {} | gojsontoyaml > {}.yaml; rm -f {}' -- {}
 jsonnet -J vendor -m manifests "example-external.jsonnet" | xargs -I{} sh -c 'cat {} | gojsontoyaml > {}.yaml; rm -f {}' -- {}
 # Rename the output rule yaml files
-mv manifests/prometheus-rules.yaml manifests/prometheus-ceph-rules.yaml
-mv manifests/prometheus-rules-external.yaml manifests/prometheus-ceph-rules-external.yaml
+mv manifests/prometheus-rules.yaml manifests/prometheus-ocs-rules.yaml
+mv manifests/prometheus-rules-external.yaml manifests/prometheus-ocs-rules-external.yaml
 

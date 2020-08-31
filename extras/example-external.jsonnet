@@ -1,6 +1,6 @@
 local kp = (import 'operator/jsonnet/kube-prometheus-external.libsonnet') + {
   _config+:: {
-    namespace: 'default',
+    namespace: 'openshift-storage',
   },
 };
 

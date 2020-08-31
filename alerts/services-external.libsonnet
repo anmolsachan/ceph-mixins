@@ -14,8 +14,8 @@
               severity: 'critical',
             },
             annotations: {
-              message: 'Cluster Object Store is in unhealthy state. Please check Ceph cluster health.',
-              description: 'Cluster Object Store is in unhealthy state for more than %s. Please check Ceph cluster health.' % $._config.clusterObjectStoreStateAlertTime,
+              message: 'Cluster Object Store is in unhealthy state. Please check Ceph cluster health or RGW connection.',
+              description: 'Cluster Object Store is in unhealthy state for more than %s. Please check Ceph cluster health or RGW connection.' % $._config.clusterObjectStoreStateAlertTime,
               storage_type: $._config.objectStorageType,
               severity_level: 'error',
             },
